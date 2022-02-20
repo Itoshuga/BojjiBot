@@ -1,4 +1,4 @@
-{
-    "token": "YOUR_TOKEN",
-    "Database": "YOUR_DATABASE"
+{ 
+    "token": "OTM3Mzg4MjkyMjI2MzEwMjQ0.YfbA4A.iN4oxj0dm_CgueBfEs1w0-Ah_rM", 
+    "Database": "mongodb+srv://itoshuga:siphano01@cluster0.ger74.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
 }
