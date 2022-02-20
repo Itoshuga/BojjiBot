@@ -46,11 +46,17 @@ module.exports = {
             await channel.bulkDelete(filtered, true).then(messages => {
                 Response.setDescription(`${messages.size} message(s) de ${Target} ont été supprimés.`);
                 interaction.reply({embeds: [Response]});
+            }).then(() => {
+                setTimeout(() => {channel.bulkDelete(1, true);
+                }, 2000)
             })
         } else {
             await channel.bulkDelete(Amount, true).then(messages => {
                 Response.setDescription(`${messages.size} message(s) du salon ont été supprimés.`);
                 interaction.reply({embeds: [Response]});
+            }).then(() => {
+                setTimeout(() => {channel.bulkDelete(1, true);
+                }, 2000)
             })
         }
     }
